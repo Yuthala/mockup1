@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +9,10 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     text-decoration:none; 
     cursor: pointer;
   }
+  html {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: normal;
+  }
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -15,6 +20,14 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 }
 h1 {
     margin-top: 53px;
+}
+.title {
+    color: #f9bf3b;
+    font-size: 41px;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
 }
 .promo {
     height: 800px;
@@ -26,8 +39,6 @@ h1 {
     margin: 0 auto;
 }
 .logo .logo_text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
@@ -36,8 +47,6 @@ h1 {
     margin-top: 14px;
 }
 .title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 41px;
     line-height: 41px;
@@ -49,8 +58,6 @@ h2.title {
     margin-top: 30px;
 }
 .simple .title_big {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 80px;
     line-height: 80px;
@@ -62,8 +69,6 @@ h2.title {
 .promo .promo_text {
     padding: 0 13px;
     margin-top: 23px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 300;
     font-size: 21px;
     line-height: 28px;
@@ -71,13 +76,12 @@ h2.title {
     text-align: center;
 }
 .promo .promo_text span {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 21px;
     line-height: 28px;
     color: #F9BF3B;
 }
-.promo .promo_btn {
+.promo .promo_btn, .gift .gift_btn {
     display: block;
     margin: 0 auto;
     margin-top: 73px;
@@ -86,7 +90,7 @@ h2.title {
     background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
     border: 4px solid rgba(0, 0, 0, 0.23);
     box-shadow: inset 0 0 0  rgba(0, 0, 0, 0.4);
-    font-family: 'RobotoCondensed';
+    font-weight: 100;
     font-size: 21px;
     line-height: 24px;
     text-transform: uppercase;
@@ -99,8 +103,6 @@ h2.title {
     margin-top: 73px;
 }
 .more .more_text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 100;
     font-size: 15px;
     text-transform: uppercase;
@@ -119,8 +121,6 @@ h2.title {
     padding: 85px 0 75px;
 }
 .waiting .waiting_header, .finish .finish_header, .first .first_header {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 30px;
     text-transform: uppercase;
@@ -138,8 +138,6 @@ h2.title {
     margin-top: 18px;
 }
 .waiting .waiting_subheader, .first .first_text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 23px;
     color: #4A4A4A;
@@ -160,8 +158,6 @@ h2.title {
 }
 .waiting .waiting_wrapper .waiting_item .waiting_descr {
     margin-top: 33px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 21px;
@@ -175,8 +171,6 @@ h2.title {
 }
 .optimization .optimization_header {
     margin-left: 391px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 26px;
     text-transform: uppercase;
@@ -184,7 +178,6 @@ h2.title {
 }
 .optimization .optimization_text {
     margin-left: 391px;
-    font-style: normal;
     font-weight: 300;
     font-size: 17px;    
     line-height: 27px;
@@ -192,7 +185,6 @@ h2.title {
     margin-top: 25px;
 }
 .optimization .optimization_text span {
-    font-family: 'Roboto - bold';
     font-weight: 700;
 }
 .optimization .optimization_img {
@@ -228,8 +220,6 @@ h2.title {
 .finish .finish_wrapper .finish_item .finish_descr {
     margin-top: 25px;
     text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 300;
     font-size: 17px;
     line-height: 20px;
@@ -247,29 +237,13 @@ h2.title {
     margin: 0 auto;
 }
 .gift .gift_text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 43px;
     color: #252525;
     padding: 0 10px;
-    margin-top: 65px;
+    margin-top: 42px;
     text-align: center;
-}
-.gift .gift_btn {
-    display: block;
-    margin: 0 auto;
-    margin-top: 51px;
-    width: 313px;
-    height: 72px;
-    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    font-family: 'RobotoCondensed';
-    font-size: 21px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-shadow: inset 0 0 0 rgba(0, 0, 0, 0.22);
 }
 .first {
     min-height: 521px;
@@ -291,8 +265,6 @@ h2.title {
     margin-top: 30px;
 }
 .first .first_date {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 26px;
     text-transform: uppercase;
@@ -306,19 +278,17 @@ h2.title {
     background: #1A1A1A;
     padding: 57px 0 69px;
 }
-.footer_wrapper .footer_link_wrapper, .footer_wrapper p {
+.footer_wrapper .footer_link_wrapper, .footer_wrapper p  {
     text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 300;
     font-size: 15px;
-    text-decoration-line: underline;
+    line-height: 26px;
     color: #888888;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .footer_wrapper p {
     margin-top: 0;
-    line-height: 21px;
+    text-decoration: none;
 }
 .footer_wrapper .support::after {
     content:'|';
